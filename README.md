@@ -40,7 +40,7 @@ Files in the poster/gallery folders are picked up automatically at build time, s
 
 The website uses temporary photos under the [Pexels License](https://www.pexels.com/license/). The source links follow the local asset names.
 
-- Site [hero](https://www.pexels.com/photo/32302738/), [about](https://www.pexels.com/photo/3184632/), [opportunity](https://www.pexels.com/photo/29253465/)
+- Site [hero](https://www.pexels.com/photo/32302738/), [about](https://www.pexels.com/photo/3184632/), [opportunity](https://www.pexels.com/photo/29253465/), [contact](https://www.pexels.com/photo/34862446/), [appointment](https://www.pexels.com/photo/6892898/), [testimonials](https://www.pexels.com/photo/4962981/)
 - Services [investments](https://www.pexels.com/photo/3184287/), [insurance](https://www.pexels.com/photo/6962993/), [banking](https://www.pexels.com/photo/7620565/)
 - Advisers [office-stock](https://www.pexels.com/photo/7582013/)
 - Gallery [01-networking](https://www.pexels.com/photo/2608517/), [02-office-meeting](https://www.pexels.com/photo/7793672/), [03-conference](https://www.pexels.com/photo/38786013/), [04-training](https://www.pexels.com/photo/8171200/), [05-applause](https://www.pexels.com/photo/16856130/), [06-workshop](https://www.pexels.com/photo/8424560/), [07-group-discussion](https://www.pexels.com/photo/3626622/), [08-conference-session](https://www.pexels.com/photo/8344905/)

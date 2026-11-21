@@ -1,6 +1,7 @@
 import { CalendarCheck, Clock, Globe2 } from "lucide-react";
 import { site } from "@/content/site";
 import { CalendlyEmbed } from "./CalendlyEmbed";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 export function AppointmentSection({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
   const H = headingLevel;
@@ -33,6 +34,9 @@ export function AppointmentSection({ headingLevel = "h2" }: { headingLevel?: "h1
           <p className="mt-8 text-xs text-mist">
             Please don&apos;t share account numbers, SIN or other sensitive financial details when booking. We&apos;ll discuss your needs securely during the meeting.
           </p>
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-line">
+            <SiteImage src="/images/site/appointment.webp" alt="" fill sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
+          </div>
         </div>
         <div className="lg:col-span-3">
           <CalendlyEmbed url={site.calendlyUrl} />
