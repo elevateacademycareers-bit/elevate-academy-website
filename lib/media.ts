@@ -8,6 +8,7 @@ export type MediaItem = {
   height: number;
   alt: string;
   caption?: string;
+  sample?: boolean;
 };
 
 const EXT = /\.(webp|avif|jpe?g|png)$/i;
@@ -22,7 +23,7 @@ const EXT = /\.(webp|avif|jpe?g|png)$/i;
 export function getMedia(folder: "gallery" | "posters"): MediaItem[] {
   const dir = path.join(process.cwd(), "public", "images", folder);
   if (!fs.existsSync(dir)) return [];
-  let meta: Record<string, { alt?: string; caption?: string }> = {};
+  let meta: Record<string, Partial<Pick<MediaItem, "alt" | "caption" | "sample">>> = {};
   const metaFile = path.join(dir, "captions.json");
   if (fs.existsSync(metaFile)) {
     try {
@@ -49,6 +50,7 @@ export function getMedia(folder: "gallery" | "posters"): MediaItem[] {
         height,
         alt: meta[file]?.alt ?? (fallback || `${folder} image`),
         caption: meta[file]?.caption,
+        sample: meta[file]?.sample,
       };
     });
 }

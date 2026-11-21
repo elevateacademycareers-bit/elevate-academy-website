@@ -1,4 +1,14 @@
 {
+  "00-a-financial-workshop-sample.webp": {
+    "alt": "Four adults review a worksheet together at a conference table",
+    "caption": "Financial education workshop (AI-generated sample)",
+    "sample": true
+  },
+  "00-b-networking-reception-sample.webp": {
+    "alt": "Four people chat around a cocktail table at an evening reception",
+    "caption": "Professional networking reception (AI-generated sample)",
+    "sample": true
+  },
   "01-placeholder.webp": { "alt": "Placeholder for a team celebration photo", "caption": "Team celebration (placeholder)" },
   "02-placeholder.webp": { "alt": "Placeholder for a corporate event photo", "caption": "Corporate event (placeholder)" },
   "03-placeholder.webp": { "alt": "Placeholder for a conference photo", "caption": "Conference (placeholder)" },
