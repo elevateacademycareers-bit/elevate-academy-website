@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { ServiceCategory } from "@/content/services";
@@ -8,7 +8,7 @@ export function ServiceCard({ service }: { service: ServiceCategory }) {
   return (
     <article className="card group flex flex-col overflow-hidden transition duration-500 hover:-translate-y-1 hover:border-gold/50">
       <div className="relative aspect-[3/2] overflow-hidden">
-        <Image
+        <SiteImage
           src={service.image}
           alt=""
           fill

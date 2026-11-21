@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import { site } from "@/content/site";
-import { ContactForm } from "./ContactForm";
+import { ButtonLink } from "@/components/ui/Button";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 
 export function ContactSection({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
@@ -33,7 +33,19 @@ export function ContactSection({ headingLevel = "h2" }: { headingLevel?: "h1" | 
           <SocialLinks className="mt-8" />
         </div>
         <div className="lg:col-span-3">
-          <ContactForm />
+          <div className="card p-6 md:p-10">
+            <h2 className="text-2xl">Contact Team Elevate</h2>
+            {site.contact.emailHref ? (
+              <>
+                <p className="mt-3 text-mist">Please leave account numbers, Social Insurance Numbers and health details out of your email.</p>
+                <ButtonLink href={site.contact.emailHref} className="mt-6">
+                  <Mail className="h-4 w-4" aria-hidden /> Email us
+                </ButtonLink>
+              </>
+            ) : (
+              <p className="mt-3 text-mist">Our contact email is coming soon.</p>
+            )}
+          </div>
         </div>
       </div>
     </section>

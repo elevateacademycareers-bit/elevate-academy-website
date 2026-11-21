@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, Mail, Phone } from "lucide-react";
@@ -38,7 +38,7 @@ export default async function AdviserPage({ params }: { params: Promise<{ slug: 
         <div className="mt-8 grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line">
-              <Image src={a.photo || "/images/advisers/placeholder.webp"} alt={a.placeholder ? "Adviser photo placeholder" : `Portrait of ${a.name}`} fill priority sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
+              <SiteImage src={a.photo || "/images/advisers/placeholder.webp"} alt={a.placeholder ? "Adviser photo placeholder" : `Portrait of ${a.name}`} fill priority sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
             </div>
           </div>
           <div className="lg:col-span-3">

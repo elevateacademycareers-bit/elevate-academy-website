@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { useState } from "react";
 import { Expand } from "lucide-react";
 import type { MediaItem } from "@/lib/media";
@@ -19,7 +19,7 @@ export function GalleryGrid({ items }: { items: MediaItem[] }) {
               className="group relative block w-full overflow-hidden rounded-xl border border-line text-left"
               aria-label={`Open image: ${it.caption || it.alt}`}
             >
-              <Image
+              <SiteImage
                 src={it.src}
                 alt={it.alt}
                 width={it.width}

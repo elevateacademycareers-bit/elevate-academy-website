@@ -9,7 +9,7 @@
 export const site = {
   name: "Team Elevate",
   tagline: "Elevate Financial Futures",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com").replace(/\/+$/, ""),
   description:
     "Team Elevate builds financial foundations for Canadian families and develops licensed financial professionals through the Experior Financial Group agency model.",
   mission:

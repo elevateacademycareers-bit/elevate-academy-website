@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { getMedia } from "@/lib/media";
 import { Carousel } from "@/components/ui/Carousel";
 
@@ -19,7 +19,7 @@ export function AchievementSlider() {
           {posters.map((p, i) => (
             <figure key={p.src} className="card overflow-hidden">
               <div className="relative aspect-[16/10]">
-                <Image
+                <SiteImage
                   src={p.src}
                   alt={p.alt}
                   fill

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 
@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-28 pb-20" aria-labelledby="hero-title">
       {/* Replace /images/site/hero.webp with approved photography (skyline / team). Only this image is preloaded. */}
-      <Image
+      <SiteImage
         src="/images/site/hero.webp"
         alt=""
         fill

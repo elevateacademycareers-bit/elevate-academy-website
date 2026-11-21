@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Adviser } from "@/content/people";
@@ -7,7 +7,7 @@ export function AdviserCard({ adviser }: { adviser: Adviser }) {
   return (
     <article className="card group flex h-full flex-col overflow-hidden transition duration-500 hover:border-gold/50">
       <div className="relative aspect-[4/5] overflow-hidden">
-        <Image
+        <SiteImage
           src={adviser.photo || "/images/advisers/placeholder.webp"}
           alt={adviser.placeholder ? "Adviser photo placeholder" : `Portrait of ${adviser.name}`}
           fill

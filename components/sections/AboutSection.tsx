@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { ArrowRight, Compass, Eye, HeartHandshake, Target } from "lucide-react";
 import { site } from "@/content/site";
 import { ButtonLink } from "@/components/ui/Button";
@@ -32,7 +32,7 @@ export function AboutSection({ full = false }: { full?: boolean }) {
         <div className="relative order-last lg:order-first">
           <div className="absolute -inset-4 rounded-3xl border border-line" aria-hidden />
           <div className="relative aspect-[6/7] overflow-hidden rounded-2xl">
-            <Image src="/images/site/about.webp" alt="Placeholder for Team Elevate team photography" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+            <SiteImage src="/images/site/about.webp" alt="Placeholder for Team Elevate team photography" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
           </div>
           <span className="placeholder-tag absolute left-4 top-4">Replace with team photo</span>
         </div>

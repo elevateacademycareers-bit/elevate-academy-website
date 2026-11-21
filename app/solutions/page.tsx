@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { CalendarDays, Check } from "lucide-react";
 import { pageMeta } from "@/lib/seo";
 import { services, clientValue } from "@/content/services";
@@ -25,7 +25,7 @@ export default function SolutionsPage() {
           <div className="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div className={i % 2 ? "lg:order-last" : ""}>
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-line">
-                <Image src={s.image} alt="" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+                <SiteImage src={s.image} alt="" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
               </div>
             </div>
             <div>

@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           </p>
           <h2>Information we collect</h2>
           <ul>
-            <li>Information you provide through our contact form: name, email address, phone number (optional), subject and message.</li>
+            <li>Information you provide when you contact us by email.</li>
             <li>Information you provide when booking through Calendly, which is processed by Calendly under its own privacy policy.</li>
             <li>Basic technical information such as browser type and pages visited, if analytics are enabled. PLACEHOLDER — list any analytics tools used.</li>
           </ul>

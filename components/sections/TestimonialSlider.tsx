@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Quote } from "lucide-react";
 import { testimonials } from "@/content/people";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -17,7 +17,7 @@ export function TestimonialSlider() {
                 {t.placeholder && <span className="placeholder-tag absolute right-5 top-5">Placeholder</span>}
                 <blockquote className="mt-6 font-serif text-xl leading-relaxed text-cream md:text-2xl">“{t.quote}”</blockquote>
                 <figcaption className="mt-8 flex items-center justify-center gap-4">
-                  {t.photo && <Image src={t.photo} alt="" width={56} height={56} className="h-14 w-14 rounded-full object-cover" />}
+                  {t.photo && <SiteImage src={t.photo} alt="" width={56} height={56} className="h-14 w-14 rounded-full object-cover" />}
                   <div className="text-left">
                     <p className="font-semibold text-gold-light">{t.name}</p>
                     {t.context && <p className="text-sm text-mist">{t.context}</p>}

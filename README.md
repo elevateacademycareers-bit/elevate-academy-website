@@ -6,23 +6,17 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Lucide i
 
 ```bash
 npm install
-cp .env.example .env.local   # set NEXT_PUBLIC_SITE_URL and NEXT_PUBLIC_CALENDLY_URL
 npm run dev                  # http://localhost:3000
-npm run build && npm start   # production
+npm run build                # static production files in out/
 ```
 
-Deploys as-is to Vercel (or any Node host). All pages are statically pre-rendered; only `/api/contact` runs on the server.
+The build exports the React pages as static HTML, CSS and JavaScript. For local overrides, copy `.env.example` to `.env.local`.
 
-## Deploy with GitHub Actions
+## Deploy to GitHub Pages
 
-The [Deploy to Vercel workflow](.github/workflows/deploy.yml) builds the app on GitHub and deploys it to Vercel. It runs on pushes to `main` and can also be run manually from the **Actions** tab by selecting the `main` branch. The run summary shows the deployment URL.
-
-1. Run `npx vercel@latest login` and `npx vercel@latest link` from the repository root. Select or create a Next.js project and set its Node.js version to 24.x. Use an unconnected Vercel project if GitHub Actions should be the only deployment trigger.
-2. In GitHub, create the `production` environment under **Settings → Environments**. Add `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` as environment secrets using `orgId` and `projectId` from `.vercel/project.json`. Add `VERCEL_TOKEN` as an environment secret using a Vercel access token with access to that project.
-3. In the Vercel project's **Production** environment, set `NEXT_PUBLIC_SITE_URL` to the public HTTPS URL. Set `NEXT_PUBLIC_CALENDLY_URL` if bookings should use Calendly.
-4. Push the workflow to `main` or run it manually after it reaches `main`.
-
-See the [Vercel guide for GitHub Actions](https://vercel.com/kb/guide/how-can-i-use-github-actions-with-vercel).
+1. In the GitHub repository, go to **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
+2. Push to `main` or run **Deploy to GitHub Pages** manually from the **Actions** tab on `main`. The [workflow](.github/workflows/deploy.yml) reads the URL and path from GitHub Pages and uploads `out/`. It uses GitHub's built-in deployment permissions and requires zero repository secrets.
+3. Open the URL shown in the deploy job. The default project URL is [elevateacademycareers-bit.github.io/elevate-academy-website](https://elevateacademycareers-bit.github.io/elevate-academy-website/).
 
 ## Pages
 
@@ -42,17 +36,17 @@ See the [Vercel guide for GitHub Actions](https://vercel.com/kb/guide/how-can-i-
 
 Files in the poster/gallery folders are picked up automatically at build time, sorted by filename (prefix `01-`, `02-`…). Use WebP/AVIF, ~1600–2000px on the long edge. Content is centralized so a headless CMS can replace these files later.
 
-## Contact form
+## Contact
 
-Client + server validation (`lib/validate.ts`), honeypot spam trap, required privacy consent, and an **optional, unticked** marketing-consent box for CASL. `app/api/contact/route.ts` currently accepts and validates submissions but does **not send them anywhere** — connect it to your email/CRM provider (Resend, Postmark, HubSpot…) and store the consent flag + timestamp.
+Set `contact.email` and `contact.emailHref` in `content/site.ts` to the approved address and its `mailto:` link. Visitors can then open their email app from the contact page.
 
 ## Calendly
 
-Set `NEXT_PUBLIC_CALENDLY_URL`. The Calendly script loads only when the booking section nears the viewport. Until a URL is set, a clearly labelled "setup required" card is shown instead.
+Set the optional `NEXT_PUBLIC_CALENDLY_URL` repository variable under **Settings → Secrets and variables → Actions → Variables**. For local development, set it in `.env.local`. The Calendly script loads when the booking section nears the viewport. A setup card appears until a URL is set.
 
 ## Performance & accessibility
 
-- Self-hosted variable fonts (no Google Fonts request), `next/image` with AVIF/WebP, only the hero image is preloaded, no animation library (CSS only), reduced-motion respected.
+- Self-hosted variable fonts, pre-optimized images served directly from the static export, CSS animations and reduced-motion support.
 - Carousels: arrows, dots, keyboard, swipe, pause-on-hover/focus and a visible pause button (WCAG 2.2.2).
 - Local Lighthouse (mobile emulation, sandboxed machine): Accessibility 100, Best Practices 100, SEO 100, Performance ~87–93. Re-measure on your production host — real numbers depend on hosting, CDN and final photos.
 
@@ -69,4 +63,3 @@ Everything not supplied by the presentation is a **visibly labelled placeholder*
 - [ ] Verify Experior statements (founded 2014, markets, programs) are current.
 - [ ] Finalize Privacy Policy and Terms (templates), Privacy Officer, governing province.
 - [ ] Contact email, phone, address, social links in `content/site.ts`.
-- [ ] Wire the contact form to a provider; implement unsubscribe handling for marketing emails.

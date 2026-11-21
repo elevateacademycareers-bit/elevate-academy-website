@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { MediaItem } from "@/lib/media";
@@ -59,7 +59,7 @@ export function Lightbox({
         }}
       >
         <figure className="relative flex max-h-full w-full max-w-6xl flex-col items-center">
-          <Image
+          <SiteImage
             key={item.src}
             src={item.src}
             alt={item.alt}

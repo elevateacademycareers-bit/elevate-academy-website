@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { CalendarDays, CheckCircle2, Loader2 } from "lucide-react";
 
 declare global {
@@ -84,7 +85,7 @@ export function CalendlyEmbed({ url }: { url: string }) {
           <span className="placeholder-tag mb-3">Setup required</span>
           <br />
           Add your Calendly link to the <code>NEXT_PUBLIC_CALENDLY_URL</code> environment variable to enable the embedded scheduler.
-          In the meantime, please use the <a className="text-gold-light underline" href="/contact">contact form</a>.
+          In the meantime, see our <Link className="text-gold-light underline" href="/contact">contact page</Link>.
         </p>
       </div>
     );
