@@ -37,7 +37,7 @@ const orgJsonLd = {
   "@type": "Organization",
   name: site.name,
   url: site.url,
-  logo: `${site.url}/images/brand/logo.png`,
+  logo: `${site.url}/icon.svg`,
   description: site.description,
   // Add address / telephone / sameAs only once verified.
 };

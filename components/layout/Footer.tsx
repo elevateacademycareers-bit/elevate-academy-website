@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="border-t border-line bg-ink-2">
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <Logo size={56} />
+          <Logo size={56} className="text-gold-light" />
           <p className="mt-5 max-w-sm text-sm text-mist">
             {site.mission} Team Elevate is an agency associated with {site.affiliation.name}.
           </p>

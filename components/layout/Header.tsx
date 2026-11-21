@@ -37,7 +37,7 @@ export function Header() {
         Skip to content
       </a>
       <div className={cn("container-x flex items-center justify-between gap-4 transition-all", scrolled ? "h-18" : "h-22")}>
-        <Logo size={46} />
+        <Logo size={46} className={scrolled ? "text-gold-light" : "text-cream"} />
         <nav aria-label="Primary" className="hidden xl:block">
           <ul className="flex items-center gap-1">
             {nav.map((item) => (

@@ -1,15 +1,16 @@
-import { SiteImage } from "@/components/ui/SiteImage";
 import Link from "next/link";
+import { cn } from "@/lib/cn";
 
-export function Logo({ size = 48, withText = true }: { size?: number; withText?: boolean }) {
+export function Logo({ size = 48, className }: { size?: number; className?: string }) {
+  const icon = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icon.svg`;
+
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Team Elevate — home">
-      <SiteImage src="/images/brand/logo.png" alt="" width={size} height={Math.round(size * 0.845)} priority className="h-auto" style={{ width: size }} />
-      {withText && (
-        <span className="hidden whitespace-nowrap text-xl min-[400px]:inline leading-none tracking-wide text-cream">
-          Team <span className="gold-text">Elevate</span>
-        </span>
-      )}
+    <Link href="/" className={cn("inline-flex shrink-0 items-center transition-colors", className)} aria-label="Team Elevate — home">
+      <span
+        aria-hidden
+        className="block aspect-[307/282] bg-current"
+        style={{ width: size, mask: `url("${icon}") center / contain no-repeat` }}
+      />
     </Link>
   );
 }
