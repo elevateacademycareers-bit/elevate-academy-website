@@ -13,6 +13,17 @@ npm run build && npm start   # production
 
 Deploys as-is to Vercel (or any Node host). All pages are statically pre-rendered; only `/api/contact` runs on the server.
 
+## Deploy with GitHub Actions
+
+The [Deploy to Vercel workflow](.github/workflows/deploy.yml) builds the app on GitHub and deploys it to Vercel. It runs on pushes to `main` and can also be run manually from the **Actions** tab by selecting the `main` branch. The run summary shows the deployment URL.
+
+1. Run `npx vercel@latest login` and `npx vercel@latest link` from the repository root. Select or create a Next.js project and set its Node.js version to 24.x. Use an unconnected Vercel project if GitHub Actions should be the only deployment trigger.
+2. In GitHub, create the `production` environment under **Settings → Environments**. Add `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` as environment secrets using `orgId` and `projectId` from `.vercel/project.json`. Add `VERCEL_TOKEN` as an environment secret using a Vercel access token with access to that project.
+3. In the Vercel project's **Production** environment, set `NEXT_PUBLIC_SITE_URL` to the public HTTPS URL. Set `NEXT_PUBLIC_CALENDLY_URL` if bookings should use Calendly.
+4. Push the workflow to `main` or run it manually after it reaches `main`.
+
+See the [Vercel guide for GitHub Actions](https://vercel.com/kb/guide/how-can-i-use-github-actions-with-vercel).
+
 ## Pages
 
 `/` · `/about` · `/solutions` · `/business-opportunity` · `/advisers` · `/advisers/[slug]` · `/gallery` · `/testimonials` · `/contact` · `/book-appointment` · `/privacy-policy` · `/terms` · plus `sitemap.xml`, `robots.txt`, 404.
