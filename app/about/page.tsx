@@ -10,7 +10,7 @@ import { ButtonLink } from "@/components/ui/Button";
 
 export const metadata = pageMeta(
   "About Us",
-  "Team Elevate's mission is building financial foundations for families to empower them today and leave a legacy for tomorrow.",
+  `${site.name}'s mission is building financial foundations for families to empower them today and leave a legacy for tomorrow.`,
   "/about"
 );
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
 
       <section className="section" aria-labelledby="exp-title">
         <div className="container-x">
-          <SectionHeading eyebrow="Our affiliation" title={`Powered by ${site.affiliation.name}`} intro="Team Elevate agents are contracted through Experior Financial Group, a managing general agency. In Experior's own words:" />
+          <SectionHeading eyebrow="Our affiliation" title={`Powered by ${site.affiliation.name}`} intro={`${site.name} agents are contracted through Experior Financial Group, a managing general agency. In Experior's own words:`} />
           <ul className="mx-auto mt-12 grid max-w-5xl gap-4 md:grid-cols-2">
             {experiorSummary.map((s) => (
               <li key={s} className="card flex gap-4 p-5 text-sm text-mist"><Building2 className="h-5 w-5 shrink-0 text-gold" aria-hidden />{s}</li>

@@ -16,7 +16,7 @@ export function SocialLinks({ className }: { className?: string }) {
     <ul className={cn("flex gap-3", className)}>
       {entries.map(([k, url]) => (
         <li key={k}>
-          <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`Team Elevate on ${k}`}
+          <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${k}`}
              className="grid h-10 w-10 place-items-center rounded-full border border-line text-gold-light transition hover:border-gold hover:bg-gold hover:text-ink">
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden><path d={paths[k]} /></svg>
           </a>

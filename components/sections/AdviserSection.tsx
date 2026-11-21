@@ -1,4 +1,5 @@
 import { advisers } from "@/content/people";
+import { site } from "@/content/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AdviserCard } from "@/components/ui/AdviserCard";
 import { Carousel } from "@/components/ui/Carousel";
@@ -11,7 +12,7 @@ export function AdviserSection({ grid = false }: { grid?: boolean }) {
       <div className="container-x">
         <SectionHeading
           eyebrow="Our Team"
-          title="Meet the People Behind Team Elevate."
+          title={`Meet the People Behind ${site.name}.`}
           intro="Licensed professionals committed to long-term relationships with the families they serve."
         />
         {grid ? (

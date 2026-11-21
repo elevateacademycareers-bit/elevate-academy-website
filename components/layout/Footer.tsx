@@ -13,7 +13,7 @@ export function Footer() {
         <div className="lg:col-span-4">
           <Logo size={56} className="text-gold-light" />
           <p className="mt-5 max-w-sm text-sm text-mist">
-            {site.mission} Team Elevate is an agency associated with {site.affiliation.name}.
+            {site.mission} {site.name} is an agency associated with {site.affiliation.name}.
           </p>
           <SocialLinks className="mt-6" />
         </div>

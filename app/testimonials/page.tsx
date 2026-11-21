@@ -1,10 +1,11 @@
+import { site } from "@/content/site";
 import { pageMeta } from "@/lib/seo";
 import { testimonials } from "@/content/people";
 import { PageHero } from "@/components/ui/PageHero";
 import { TestimonialSlider } from "@/components/sections/TestimonialSlider";
 import { Quote } from "lucide-react";
 
-export const metadata = pageMeta("Testimonials", "Stories of trust from people who work with Team Elevate.", "/testimonials");
+export const metadata = pageMeta("Testimonials", `Stories of trust from people who work with ${site.name}.`, "/testimonials");
 
 export default function TestimonialsPage() {
   return (

@@ -37,7 +37,7 @@ export function AboutSection({ full = false }: { full?: boolean }) {
           <span className="placeholder-tag absolute left-4 top-4">Stock photo</span>
         </div>
         <div>
-          <p className="eyebrow mb-4">About Team Elevate</p>
+          <p className="eyebrow mb-4">About {site.name}</p>
           <h2 id="about-title" className="text-3xl md:text-5xl">More Than Financial Services. A Vision for Generations.</h2>
           <div className="gold-rule mt-6 w-24" aria-hidden />
           <blockquote className="mt-8 border-l-2 border-gold pl-5 text-xl italic text-gold-light md:text-2xl">
@@ -45,7 +45,7 @@ export function AboutSection({ full = false }: { full?: boolean }) {
           </blockquote>
           <p className="mt-6 text-mist">
             Many families face rising expenses, debt, insufficient savings and the worry of what happens if illness or job loss strikes.
-            Team Elevate exists to help. Working with {site.affiliation.name}, our licensed agents bring banking, insurance and investment
+            {site.name} exists to help. Working with {site.affiliation.name}, our licensed agents bring banking, insurance and investment
             solutions under one roof — and the time to understand what each family actually needs.
           </p>
           {!full && (

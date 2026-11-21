@@ -1,3 +1,4 @@
+import { site } from "@/content/site";
 import { ArrowRight, Award, BadgeDollarSign, CalendarDays, Check, GitBranch, Layers, Repeat, Users } from "lucide-react";
 import { pageMeta } from "@/lib/seo";
 import {
@@ -19,7 +20,7 @@ import { ButtonLink } from "@/components/ui/Button";
 
 export const metadata = pageMeta(
   "Business Opportunity",
-  "Become a licensed financial professional with Team Elevate. Learn about training, the agency model, how compensation works and business ownership.",
+  `Become a licensed financial professional with ${site.name}. Learn about training, the agency model, how compensation works and business ownership.`,
   "/business-opportunity"
 );
 
@@ -58,7 +59,7 @@ export default function OpportunityPage() {
             <p className="eyebrow mb-4">The mindset</p>
             <h2 id="quad-title" className="text-3xl md:text-4xl">From Owning a Job to Owning an Agency</h2>
             <p className="mt-5 text-mist">
-              The cashflow quadrant describes four ways people earn. Team Elevate&apos;s model is designed to help licensed agents move from the
+              The cashflow quadrant describes four ways people earn. {site.name}&apos;s model is designed to help licensed agents move from the
               left side — trading time for income — toward building an agency and, eventually, having money work for them.
             </p>
             <p className="mt-4 text-mist">The path: <strong className="text-cream">government licence → agent → agency</strong>.</p>

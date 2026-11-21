@@ -2,7 +2,7 @@ import { pageMeta } from "@/lib/seo";
 import { site } from "@/content/site";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata = pageMeta("Privacy Policy", "How Team Elevate collects, uses and protects personal information.", "/privacy-policy");
+export const metadata = pageMeta("Privacy Policy", `How ${site.name} collects, uses and protects personal information.`, "/privacy-policy");
 
 export default function PrivacyPage() {
   return (

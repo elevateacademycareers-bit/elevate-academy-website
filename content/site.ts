@@ -6,12 +6,14 @@
  * invented: if a value is unknown, leave the placeholder in place.
  */
 
+const name = "Elevate Academy";
+
 export const site = {
-  name: "Team Elevate",
+  name,
   tagline: "Elevate Financial Futures",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com").replace(/\/+$/, ""),
   description:
-    "Team Elevate builds financial foundations for Canadian families and develops licensed financial professionals through the Experior Financial Group agency model.",
+    `${name} builds financial foundations for Canadian families and develops licensed financial professionals through the Experior Financial Group agency model.`,
   mission:
     "Building financial foundations for families to empower them today and leave a legacy for tomorrow.",
   /** Configure via NEXT_PUBLIC_CALENDLY_URL. Never hard-code an invented link. */

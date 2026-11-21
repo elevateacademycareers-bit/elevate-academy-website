@@ -2,7 +2,7 @@ import { pageMeta } from "@/lib/seo";
 import { site } from "@/content/site";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata = pageMeta("Terms and Conditions", "Terms governing use of the Team Elevate website.", "/terms");
+export const metadata = pageMeta("Terms and Conditions", `Terms governing use of the ${site.name} website.`, "/terms");
 
 export default function TermsPage() {
   return (

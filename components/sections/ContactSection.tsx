@@ -39,7 +39,7 @@ export function ContactSection({ headingLevel = "h2" }: { headingLevel?: "h1" | 
               <SiteImage src="/images/site/contact.webp" alt="" fill sizes="(min-width:1024px) 55vw, 100vw" className="object-cover" />
             </div>
             <div className="p-6 md:p-10">
-              <h2 className="text-2xl">Contact Team Elevate</h2>
+              <h2 className="text-2xl">Contact {site.name}</h2>
               {site.contact.emailHref ? (
                 <>
                   <p className="mt-3 text-mist">Please leave account numbers, Social Insurance Numbers and health details out of your email.</p>
