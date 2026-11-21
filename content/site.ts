@@ -10,7 +10,6 @@ const name = "Elevate Academy";
 
 export const site = {
   name,
-  tagline: "Elevate Financial Futures",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com").replace(/\/+$/, ""),
   description:
     `${name} builds financial foundations for Canadian families and develops licensed financial professionals through the Experior Financial Group agency model.`,
