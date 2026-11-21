@@ -22,7 +22,7 @@ export function Hero() {
 
       <div className="container-x">
         <div className="max-w-3xl">
-          <p className="eyebrow mb-6 animate-rise">{site.name}</p>
+          <p className="eyebrow mb-6 animate-rise text-lg sm:text-2xl">{site.name}</p>
           <h1 id="hero-title" className="text-[2.6rem] leading-[1.08] sm:text-6xl lg:text-7xl animate-lift">
             Build a Stronger Financial Future. <span className="gold-text italic">Together.</span>
           </h1>
