@@ -15,7 +15,7 @@ export function TestimonialSlider() {
               <figure key={i} className="card relative px-6 py-12 text-center md:px-16 md:py-16">
                 <Quote className="mx-auto h-10 w-10 text-gold/70" aria-hidden />
                 {t.placeholder && <span className="placeholder-tag absolute right-5 top-5">Placeholder</span>}
-                <blockquote className="mt-6 font-serif text-xl leading-relaxed text-cream md:text-2xl">“{t.quote}”</blockquote>
+                <blockquote className="mt-6 text-xl leading-relaxed text-cream md:text-2xl">“{t.quote}”</blockquote>
                 <figcaption className="mt-8 flex items-center justify-center gap-4">
                   {t.photo && <SiteImage src={t.photo} alt="" width={56} height={56} className="h-14 w-14 rounded-full object-cover" />}
                   <div className="text-left">

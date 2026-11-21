@@ -5,19 +5,10 @@ import { site } from "@/content/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-// Self-hosted (no runtime request to Google Fonts): Inter + Playfair Display, variable, latin subset.
-const inter = localFont({
-  src: "./fonts/inter-latin-wght-normal.woff2",
-  variable: "--font-inter",
+const outfit = localFont({
+  src: "./fonts/outfit-latin-wght-normal.woff2",
+  variable: "--font-outfit",
   weight: "100 900",
-  display: "swap",
-});
-const playfair = localFont({
-  src: [
-    { path: "./fonts/playfair-display-latin-wght-normal.woff2", style: "normal", weight: "400 900" },
-    { path: "./fonts/playfair-display-latin-wght-italic.woff2", style: "italic", weight: "400 900" },
-  ],
-  variable: "--font-playfair",
   display: "swap",
 });
 
@@ -53,7 +44,7 @@ const orgJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-CA" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en-CA" className={outfit.variable}>
       <body>
         <Header />
         <main id="main">{children}</main>

@@ -40,7 +40,7 @@ export function AboutSection({ full = false }: { full?: boolean }) {
           <p className="eyebrow mb-4">About Team Elevate</p>
           <h2 id="about-title" className="text-3xl md:text-5xl">More Than Financial Services. A Vision for Generations.</h2>
           <div className="gold-rule mt-6 w-24" aria-hidden />
-          <blockquote className="mt-8 border-l-2 border-gold pl-5 font-serif text-xl italic text-gold-light md:text-2xl">
+          <blockquote className="mt-8 border-l-2 border-gold pl-5 text-xl italic text-gold-light md:text-2xl">
             “{site.mission}”
           </blockquote>
           <p className="mt-6 text-mist">

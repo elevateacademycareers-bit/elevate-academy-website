@@ -66,7 +66,7 @@ export default function OpportunityPage() {
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line">
             {cashflowQuadrant.map((q) => (
               <div key={q.letter} className={`p-6 md:p-8 ${q.letter === "B" || q.letter === "I" ? "bg-card" : "bg-ink"}`}>
-                <p className={`font-serif text-5xl ${q.letter === "B" || q.letter === "I" ? "gold-text" : "text-mist"}`}>{q.letter}</p>
+                <p className={`text-5xl ${q.letter === "B" || q.letter === "I" ? "gold-text" : "text-mist"}`}>{q.letter}</p>
                 <p className="mt-3 text-sm font-semibold text-cream">{q.label}</p>
                 <p className="text-sm text-mist">{q.caption}</p>
               </div>
@@ -82,7 +82,7 @@ export default function OpportunityPage() {
           <ol className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {pathway.map((p, i) => (
               <li key={p.title} className="card p-6">
-                <span className="font-serif text-3xl text-gold">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-3xl text-gold">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="mt-3 text-xl">{p.title}</h3>
                 <p className="mt-2 text-sm text-mist">{p.text}</p>
               </li>

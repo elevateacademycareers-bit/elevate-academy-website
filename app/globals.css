@@ -10,8 +10,7 @@
   --color-mist: #b7b7ad;
   --color-line: rgb(201 164 92 / 0.22);
 
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --shadow-card: 0 1px 0 rgb(232 214 173 / 0.06) inset, 0 18px 40px -24px rgb(0 0 0 / 0.7);
 
@@ -42,11 +41,11 @@
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4 {
-    font-family: var(--font-serif);
     line-height: 1.15;
     letter-spacing: -0.01em;
     text-wrap: balance;
   }
+  code, kbd, samp, pre { font-family: inherit; }
   p { text-wrap: pretty; }
   ::selection { background: var(--color-gold); color: var(--color-ink); }
   :focus-visible {

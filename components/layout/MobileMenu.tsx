@@ -55,7 +55,7 @@ export function MobileMenu({
                   onClick={onClose}
                   aria-current={isActive(item.href) ? "page" : undefined}
                   className={cn(
-                    "block border-b border-line py-4 font-serif text-2xl transition",
+                    "block border-b border-line py-4 text-2xl transition",
                     isActive(item.href) ? "text-gold" : "text-cream hover:text-gold-light"
                   )}
                 >

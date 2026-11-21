@@ -80,7 +80,7 @@ export function CalendlyEmbed({ url }: { url: string }) {
     return (
       <div className="card flex min-h-[420px] flex-col items-center justify-center p-10 text-center">
         <CalendarDays className="h-10 w-10 text-gold" aria-hidden />
-        <p className="mt-4 font-serif text-2xl">Online booking coming soon</p>
+        <p className="mt-4 text-2xl">Online booking coming soon</p>
         <p className="mt-2 max-w-md text-sm text-mist">
           <span className="placeholder-tag mb-3">Setup required</span>
           <br />

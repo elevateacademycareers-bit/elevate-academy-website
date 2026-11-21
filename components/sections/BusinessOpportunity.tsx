@@ -42,7 +42,7 @@ export function BusinessOpportunity() {
               ["$0", "registration fee"],
             ].map(([k, v]) => (
               <div key={v} className="px-2">
-                <p className="font-serif text-xl text-gold-light">{k}</p>
+                <p className="text-xl text-gold-light">{k}</p>
                 <p className="mt-1 text-[0.7rem] uppercase tracking-wider text-mist">{v}</p>
               </div>
             ))}
