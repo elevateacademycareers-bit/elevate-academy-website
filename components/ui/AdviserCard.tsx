@@ -8,8 +8,8 @@ export function AdviserCard({ adviser }: { adviser: Adviser }) {
     <article className="card group flex h-full flex-col overflow-hidden transition duration-500 hover:border-gold/50">
       <div className="relative aspect-[4/5] overflow-hidden">
         <SiteImage
-          src={adviser.photo || "/images/advisers/placeholder.webp"}
-          alt={adviser.placeholder ? "Adviser photo placeholder" : `Portrait of ${adviser.name}`}
+          src={adviser.photo || "/images/advisers/office-stock.webp"}
+          alt={adviser.photo ? `Portrait of ${adviser.name}` : ""}
           fill
           sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 90vw"
           className="object-cover transition duration-700 group-hover:scale-[1.03]"

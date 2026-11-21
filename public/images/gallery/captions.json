@@ -2,19 +2,51 @@
   "00-a-financial-workshop-sample.webp": {
     "alt": "Four adults review a worksheet together at a conference table",
     "caption": "Financial education workshop (AI-generated sample)",
-    "sample": true
+    "sample": "ai"
   },
   "00-b-networking-reception-sample.webp": {
     "alt": "Four people chat around a cocktail table at an evening reception",
     "caption": "Professional networking reception (AI-generated sample)",
-    "sample": true
+    "sample": "ai"
   },
-  "01-placeholder.webp": { "alt": "Placeholder for a team celebration photo", "caption": "Team celebration (placeholder)" },
-  "02-placeholder.webp": { "alt": "Placeholder for a corporate event photo", "caption": "Corporate event (placeholder)" },
-  "03-placeholder.webp": { "alt": "Placeholder for a conference photo", "caption": "Conference (placeholder)" },
-  "04-placeholder.webp": { "alt": "Placeholder for a training session photo", "caption": "Training session (placeholder)" },
-  "05-placeholder.webp": { "alt": "Placeholder for a recognition ceremony photo", "caption": "Recognition ceremony (placeholder)" },
-  "06-placeholder.webp": { "alt": "Placeholder for a team achievement photo", "caption": "Team achievement (placeholder)" },
-  "07-placeholder.webp": { "alt": "Placeholder for an agency gathering photo", "caption": "Agency gathering (placeholder)" },
-  "08-placeholder.webp": { "alt": "Placeholder for a leadership workshop photo", "caption": "Leadership workshop (placeholder)" }
+  "01-networking.webp": {
+    "alt": "People standing together at an indoor reception",
+    "caption": "Networking reception (stock photo)",
+    "sample": "stock"
+  },
+  "02-office-meeting.webp": {
+    "alt": "Colleagues meeting around a conference table",
+    "caption": "Office meeting (stock photo)",
+    "sample": "stock"
+  },
+  "03-conference.webp": {
+    "alt": "Audience watching a conference speaker",
+    "caption": "Conference audience (stock photo)",
+    "sample": "stock"
+  },
+  "04-training.webp": {
+    "alt": "Colleagues discussing work in a meeting room",
+    "caption": "Training discussion (stock photo)",
+    "sample": "stock"
+  },
+  "05-applause.webp": {
+    "alt": "Seated audience applauding at a meeting",
+    "caption": "Audience applause (stock photo)",
+    "sample": "stock"
+  },
+  "06-workshop.webp": {
+    "alt": "Participants gathered around a meeting table",
+    "caption": "Workshop discussion (stock photo)",
+    "sample": "stock"
+  },
+  "07-group-discussion.webp": {
+    "alt": "Four people talking around a table in a bright office",
+    "caption": "Small-group discussion (stock photo)",
+    "sample": "stock"
+  },
+  "08-conference-session.webp": {
+    "alt": "Participants gathered for a conference session",
+    "caption": "Conference session (stock photo)",
+    "sample": "stock"
+  }
 }

@@ -32,9 +32,9 @@ export function AboutSection({ full = false }: { full?: boolean }) {
         <div className="relative order-last lg:order-first">
           <div className="absolute -inset-4 rounded-3xl border border-line" aria-hidden />
           <div className="relative aspect-[6/7] overflow-hidden rounded-2xl">
-            <SiteImage src="/images/site/about.webp" alt="Placeholder for Team Elevate team photography" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+            <SiteImage src="/images/site/about.webp" alt="People in a collaborative meeting" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
           </div>
-          <span className="placeholder-tag absolute left-4 top-4">Replace with team photo</span>
+          <span className="placeholder-tag absolute left-4 top-4">Stock photo</span>
         </div>
         <div>
           <p className="eyebrow mb-4">About Team Elevate</p>

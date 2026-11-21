@@ -1,7 +1,22 @@
 {
-  "01-placeholder.webp": { "alt": "Placeholder achievement poster: team achievement", "caption": "Team achievement" },
-  "02-placeholder.webp": { "alt": "Placeholder achievement poster: recognition and awards", "caption": "Recognition & awards" },
-  "03-placeholder.webp": { "alt": "Placeholder achievement poster: business milestone", "caption": "Business milestone" },
-  "04-placeholder.webp": { "alt": "Placeholder achievement poster: conference highlights", "caption": "Conference highlights" },
-  "05-placeholder.webp": { "alt": "Placeholder achievement poster: training programme", "caption": "Training programme" }
+  "01-collaboration.webp": {
+    "alt": "People meeting in an office",
+    "caption": "Team collaboration (stock photo)"
+  },
+  "02-applause.webp": {
+    "alt": "Audience applauding in a conference room",
+    "caption": "Conference applause (stock photo)"
+  },
+  "03-planning.webp": {
+    "alt": "Notebooks and a pen on a table",
+    "caption": "Planning materials (stock photo)"
+  },
+  "04-conference.webp": {
+    "alt": "Attendee listening at a conference",
+    "caption": "Conference attendee (stock photo)"
+  },
+  "05-training-materials.webp": {
+    "alt": "Notebooks and tablets on a wooden table",
+    "caption": "Training materials (stock photo)"
+  }
 }

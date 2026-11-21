@@ -36,6 +36,16 @@ The build exports the React pages as static HTML, CSS and JavaScript. For local 
 
 Files in the poster/gallery folders are picked up automatically at build time, sorted by filename (prefix `01-`, `02-`…). Use WebP/AVIF, ~1600–2000px on the long edge. Content is centralized so a headless CMS can replace these files later.
 
+## Temporary stock photography
+
+The website uses temporary photos under the [Pexels License](https://www.pexels.com/license/). The source links follow the local asset names.
+
+- Site [hero](https://www.pexels.com/photo/32302738/), [about](https://www.pexels.com/photo/3184632/), [opportunity](https://www.pexels.com/photo/29253465/)
+- Services [investments](https://www.pexels.com/photo/3184287/), [insurance](https://www.pexels.com/photo/6962993/), [banking](https://www.pexels.com/photo/7620565/)
+- Advisers [office-stock](https://www.pexels.com/photo/7582013/)
+- Gallery [01-networking](https://www.pexels.com/photo/2608517/), [02-office-meeting](https://www.pexels.com/photo/7793672/), [03-conference](https://www.pexels.com/photo/38786013/), [04-training](https://www.pexels.com/photo/8171200/), [05-applause](https://www.pexels.com/photo/16856130/), [06-workshop](https://www.pexels.com/photo/8424560/), [07-group-discussion](https://www.pexels.com/photo/3626622/), [08-conference-session](https://www.pexels.com/photo/8344905/)
+- Posters [01-collaboration](https://www.pexels.com/photo/6150528/), [02-applause](https://www.pexels.com/photo/6950184/), [03-planning](https://www.pexels.com/photo/10815241/), [04-conference](https://www.pexels.com/photo/32315949/), [05-training-materials](https://www.pexels.com/photo/6446404/)
+
 ## Contact
 
 Set `contact.email` and `contact.emailHref` in `content/site.ts` to the approved address and its `mailto:` link. Visitors can then open their email app from the contact page.
@@ -54,7 +64,7 @@ Set the optional `NEXT_PUBLIC_CALENDLY_URL` repository variable under **Settings
 
 Everything not supplied by the presentation is a **visibly labelled placeholder** (gold "Placeholder"/"Draft" tags, dashed notes). Search the codebase for `PLACEHOLDER` and `placeholder: true`.
 
-- [ ] Replace all placeholder images (hero, about, services, posters, gallery, adviser photos) with approved photography.
+- [ ] Replace temporary stock and sample images with approved photography, including real adviser portraits.
 - [ ] Add real adviser profiles — verified names, titles, licences, provinces. "Financial Advisor/Planner" are protected titles in some provinces (e.g. ON, SK).
 - [ ] Add authentic testimonials only with written consent; set `placeholder: false`.
 - [ ] Vision and Values wording on the About section is **draft** (not in the deck) — confirm or rewrite.

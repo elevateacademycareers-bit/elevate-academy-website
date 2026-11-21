@@ -8,7 +8,7 @@ export type MediaItem = {
   height: number;
   alt: string;
   caption?: string;
-  sample?: boolean;
+  sample?: "ai" | "stock";
 };
 
 const EXT = /\.(webp|avif|jpe?g|png)$/i;

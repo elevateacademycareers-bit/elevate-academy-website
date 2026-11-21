@@ -33,7 +33,8 @@ export function BusinessOpportunity() {
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-line">
-            <SiteImage src="/images/site/opportunity.webp" alt="Placeholder for a training and mentorship photo" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+            <SiteImage src="/images/site/opportunity.webp" alt="A presentation in a meeting room" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+            <span className="placeholder-tag absolute left-4 top-4">Stock photo</span>
           </div>
           <div className="card absolute -bottom-8 left-4 right-4 grid grid-cols-3 divide-x divide-line p-5 text-center sm:left-auto sm:right-6 sm:w-96">
             {[

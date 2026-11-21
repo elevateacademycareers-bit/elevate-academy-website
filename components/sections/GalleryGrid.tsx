@@ -29,7 +29,7 @@ export function GalleryGrid({ items }: { items: MediaItem[] }) {
               />
               {it.sample && (
                 <span className="absolute left-3 top-3 rounded bg-ink/90 px-2 py-1 text-xs text-cream">
-                  AI-generated sample
+                  {it.sample === "stock" ? "Stock photo" : "AI-generated sample"}
                 </span>
               )}
               <span className="absolute inset-0 flex items-end justify-between bg-gradient-to-t from-ink/90 via-ink/10 to-transparent p-4 opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100">

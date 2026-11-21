@@ -9,7 +9,7 @@ export function GallerySection({ limit }: { limit?: number }) {
   return (
     <section className="section bg-ink-2/60" aria-label="Gallery">
       <div className="container-x">
-        <SectionHeading eyebrow="Gallery" title="Moments That Bring Us Together." intro="Celebrations, conferences, training sessions and recognition across our agency." />
+        <SectionHeading eyebrow="Gallery" title="Moments That Bring Us Together." intro="Illustrative photos of conferences, workshops and professional gatherings." />
         <div className="mt-14">
           <GalleryGrid items={items} />
         </div>
