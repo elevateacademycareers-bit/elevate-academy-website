@@ -1,6 +1,6 @@
 import { SiteImage } from "@/components/ui/SiteImage";
 import { getMedia } from "@/lib/media";
-import { Carousel } from "@/components/ui/Carousel";
+import { AchievementRail } from "./AchievementRail";
 
 /** Posters are read from /public/images/posters — drop approved files in to update. */
 export function AchievementSlider() {
@@ -15,7 +15,7 @@ export function AchievementSlider() {
             <h2 id="achievements-title" className="mt-2 text-2xl md:text-3xl">Achievements & Recognition</h2>
           </div>
         </div>
-        <Carousel label="Achievement posters" perView={{ base: 1, md: 1, lg: 2 }} autoplay={5000}>
+        <AchievementRail>
           {posters.map((p, i) => (
             <figure key={p.src} className="card overflow-hidden">
               <div className="relative aspect-[16/10]">
@@ -32,7 +32,7 @@ export function AchievementSlider() {
               {p.caption && <figcaption className="px-5 py-4 text-sm text-gold-light">{p.caption}</figcaption>}
             </figure>
           ))}
-        </Carousel>
+        </AchievementRail>
       </div>
     </section>
   );
